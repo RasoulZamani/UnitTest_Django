@@ -3,5 +3,5 @@ from django.views import View
 
 
 class HomeView(View):
-    def get(sel,request):
+    def get(self,request):
         return render(request, 'home/home.html')
