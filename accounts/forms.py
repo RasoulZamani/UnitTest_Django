@@ -5,7 +5,7 @@ from django.core.exceptions import ValidationError
 
 
 class UserRegisterForm(forms.Form):
-    username    = forms.CharField(max_length=255)
+    username = forms.CharField(max_length=255)
     email    = forms.EmailField(max_length=255)
     #phone    = forms.CharField(max_length=11)
     password = forms.CharField(label='password',widget=forms.PasswordInput)
